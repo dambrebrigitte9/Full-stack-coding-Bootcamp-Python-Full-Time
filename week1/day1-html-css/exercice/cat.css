@@ -1,0 +1,32 @@
+.aligne{
+    text-align: center;
+}
+img{
+    width: 900px;
+    height: 320px;
+}
+.bordure{
+    text-align: center;
+    color: red;
+    border: 2px solid red;
+    width: 1196px;
+
+}
+td, th, tr{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+i{
+    background-color: yellow;
+}
+h1,h2{
+    color:crimson;
+    background-color: pink;
+}
+
+ol,ul:hover{
+    cursor: pointer;
+}
