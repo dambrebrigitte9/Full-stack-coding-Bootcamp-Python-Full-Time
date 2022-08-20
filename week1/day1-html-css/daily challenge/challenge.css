@@ -1,0 +1,70 @@
+
+header{
+    padding: px;
+    color: white;
+    padding: 3px;
+    background-color: palevioletred;
+
+}
+section{
+    background-image: url(https://th.bing.com/th/id/R.86d57c68aa9151c048237cf1db6f0f15?rik=caRCdhIeg1y2NA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-j1Rn0WF6d0I%2fUFXemUm2TlI%2fAAAAAAAAABE%2fQJgYOuc09Q4%2fs1600%2fthe-avengers-black-widow.jpg&ehk=4QjmRWQXpk6WGcjRq1p9mfOqku4YHtbSe%2fdI3dj4BtA%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    padding: 80px;
+}
+.para{
+    color: white;
+    text-indent:10px; 
+ 
+}
+
+li:hover{
+    cursor: pointer;
+    color: white;
+    
+}
+li { 
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    float: left;
+}
+li a{
+    text-decoration: none;
+}
+.font{
+    font-weight: bold;
+    font-size: 50px;
+    color: bisque;
+    margin-bottom: 17px;
+}
+ul{
+    display: flex;
+}
+.a{
+    margin-right: 14px;
+    margin-left: 900px;
+    font-size:20px;
+}
+.b{
+    margin-right: 14px;
+    font-size:20px;
+}
+.c{
+    margin-right: 14px;
+    font-size:20px;
+}
+footer{
+    width: 100%;
+    background-color: papayawhip;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: fixed;  
+}
+a{
+    
+    font-size: 25px;  
+}
+footer a{
+    text-decoration: none;
+}
