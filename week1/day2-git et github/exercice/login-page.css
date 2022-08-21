@@ -1,0 +1,76 @@
+.debut{
+    padding: 30px; 
+    color: black;
+    background-color: lightcyan;
+    height: 450px;
+}
+hr{
+    width: 60px;
+}
+section{
+    display: flex;
+    
+}
+.fin{
+    padding: 30px;
+    background:linear-gradient(#290238,#421155);
+    color: white;
+    height: 450px;
+    text-align: center;
+    
+}
+label{
+    margin-right: 25px;
+}
+.strong{
+    text-align: center;
+    font-size: 35px;
+}
+.remenber{
+    float: left;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+.connect{
+    display: flex;
+
+}
+input{
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgb(204, 223, 223);
+    border: none;
+}
+input[type="text"], input[type="password"] ,input[type="submit"]{
+    width: 100%;
+}
+input[type="submit"]{
+    color: white;
+    background:linear-gradient(#290238,#421155);
+    text-align: center;
+}
+button{
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    background:linear-gradient(#290238,#421155);
+    padding: 1px;
+}
+.ligne{
+    margin-right: 5px;
+}
+.espace{
+    text-align: center;
+   
+}
+.decend{
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.fa{
+    margin-top: 120px;
+}
+h1{
+    font-size: 30px;
+}
