@@ -1,0 +1,75 @@
+.bloc{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 10px;
+    color: black;
+    
+}
+.introduction{
+    padding: 40px;
+    background-color: rgb(235, 233, 233);
+    height: 1095px;
+    width: 440px;
+   
+}
+.conclusion{
+    padding: 90px;
+    height: 1000px;
+    width: 680px;
+    background-color: white;
+}
+section{
+    display: flex;
+}
+img{
+    width:230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 100px;
+    margin-top: 80px; 
+}
+.profile{
+    display: flex;
+    
+}
+.milieu{
+    text-align: center;
+}
+h1 ,h2{
+    font-size: 30px;
+    color: rgb(184, 184, 93);
+    
+    
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.bas ,.ba ,.b{
+    margin-top: 15px;
+   
+}
+.indent{
+    text-indent: 40px;
+}
+.fixed{
+    font-size: 22px;
+    color:rgb(190, 190, 143);
+    
+}
+.bibi , .bobo{
+    display: flex;
+    margin-right: 12px;
+    justify-content: space-between;
+}
+.plus{
+    font-size: 48px;
+    color: rgb(96, 96, 207);
+    
+}
+.asiz{
+    font-size: 16px;
+}
