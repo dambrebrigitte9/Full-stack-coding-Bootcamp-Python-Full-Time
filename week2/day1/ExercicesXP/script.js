@@ -5,13 +5,13 @@ console.log('I eat ' +monplats+' '+ 'at every ' + repasPrefere+' ');
 
 
 //exercice2
+//partie 1
 let myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 let x=myWatchedSeries.length;
-console.log(x);
-
-let serie='and the bang theory';
+console.log(x);//3
+let suivi="jai aimer regarder a money heist";
 console.log('I watched 3 series : ' +myWatchedSeries);
-
+//partie 2
 myWatchedSeries[2]='amis';//modifier le nom d'une variable en utilisant l'index 
 myWatchedSeries.push='gameOfTrone';//ajouter une variable  a la fin d'un tabaux
 myWatchedSeries.unshift='365 day';//ajouter une variable au debut d'un tablaux
@@ -20,6 +20,8 @@ myWatchedSeries[1];
 let str='money heist';//permet
 str.substring(2,3);//d'aficher la troisieme lettre de  « money heist ».
 console.log(myWatchedSeries);
+
+
 //exercice3
 const tempera='0° C';
 let temperaEnFahrenheit= +tempera /5*9+32
@@ -48,7 +50,7 @@ typeof(NaN)
 // Prediction:  ceci n'est  pas un nombre
 // Actual: 'number'
 typeof("hello")
-// Prediction: ceci est un mot
+// Prediction: ceci est une chaine de caractere
 // Actual:'string'
 typeof(true)
 // Prediction: ceci est un boolean
