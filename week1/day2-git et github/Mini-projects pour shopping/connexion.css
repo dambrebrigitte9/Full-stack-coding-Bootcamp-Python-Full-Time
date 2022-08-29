@@ -1,0 +1,33 @@
+header{
+    background-image: url(https://images.pexels.com/photos/711935/pexels-photo-711935.jpeg?cs=srgb&dl=pexels-wibhas-onnom-711935.jpg&fm=jpg);
+     background-size: cover;
+     padding: 149px;
+    
+}
+fieldset{
+    border-radius: 15px;
+    width: 280px;
+    height: 440px;
+    margin-left: 700px;
+    box-shadow: 0 0 20px 0 white;
+    
+}
+input[type="text"] ,input[type="password"]{
+    width: 280px;
+    border-radius: 5px;
+    padding:9px;
+    margin-top: 10px;
+    border: none;
+    
+}
+i{
+    text-align: center;
+}
+input[type="submit"]{
+    width: 280px;
+    text-align: center;
+    padding: 2px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: none;
+}

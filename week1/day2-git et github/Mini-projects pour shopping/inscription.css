@@ -1,0 +1,45 @@
+form{
+    
+    color: white;
+}
+.saut{
+    margin-top: 50px;
+    text-align: right;
+    
+}
+fieldset{
+    height: 450px;
+    width: 400px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 wheat;
+    
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    margin-top: 5px;
+    width: 250px;
+    
+}
+
+legend{
+    color: wheat;
+    padding: 5px;
+    width: 90px;
+}
+.bloc{
+    background-image: url(https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?cs=srgb&dl=pexels-ezra-comeau-2387418.jpg&fm=jpg);
+    background-size: cover;
+    padding: 85px;
+}
+input[type="submit"]{
+    background-color: rgb(67, 161, 67);
+}
+a{
+    text-decoration: none;
+    color: rgb(67, 161, 67);
+    font-size: 20px;
+    
+}

@@ -1,0 +1,41 @@
+.video {
+    float: left;
+    margin-right: 25px;
+  }
+  .thumbnail {
+    width: 300px;
+    height: 400px;
+    display: flex;
+   
+    
+  }
+  .details {
+    display: flex;
+  }
+ 
+  .thumbnail img {
+    object-fit: cover;
+    height: 410px;
+    width: 300px;
+    padding-top: 5px;
+    
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+    background-color: aliceblue;
+    width: 284px;
+  }
+  .alice{
+    text-decoration: none;
+    text-decoration: line-through;
+    color: black;
+  }
+  .bibi{
+    color: chartreuse;
+    text-decoration: none;
+  }
+  
+  

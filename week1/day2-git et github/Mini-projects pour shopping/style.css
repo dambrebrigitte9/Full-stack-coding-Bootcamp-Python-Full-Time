@@ -1,0 +1,51 @@
+footer{
+    background-color: #ccc;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: black;
+}
+header{
+    background-color: #333;
+    display: flex;
+    width: 100%;
+    
+}
+.a{
+    margin-left: 830px;
+}
+li:hover{
+    border: 3px solid black;
+}
+
+ul{
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+}
+li{    
+       margin-right: 20px;
+    
+       
+}
+/* section{
+   background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   background-size: cover;
+   padding: 70px;
+} */
+li a{
+    text-decoration: none;
+    color: white;
+}
+.eude{
+    font-size: 80px;
+    text-shadow: 6px 6px 10px blue;
+    text-align: center;
+    color: rgb(110, 90, 94);
+}
+.eude:hover{
+    color: palevioletred;
+}
