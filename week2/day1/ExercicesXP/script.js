@@ -23,8 +23,9 @@ console.log(myWatchedSeries);
 
 
 //exercice3
-const tempera='0° C';
-let temperaEnFahrenheit= +tempera /5*9+32
+let tempera=0;
+let temperaEnFahrenheit= (tempera/5)*9+32;
+console.log(temperaEnFahrenheit);
 //https://www.tutorialspoint.com/temperature-converter-using-javascript#
 
 //exercice4
