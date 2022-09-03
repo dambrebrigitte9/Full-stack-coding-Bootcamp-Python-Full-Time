@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//exercice 1
+
+    5 >= 1
+    //prediction:ceci es vrai car 5 est superieur a 1
+    //sortie: vrai
+    0 === 1
+    //prediction: on ne peut pas cmparer 0 a 1
+    //sortie: false
+    4 <= 1
+    //prediction: ceci est vrai car 1 est inferieur a 4
+    //sortie: vrai
+    1 != 1
+    //prediction: 1 n'est pas different de 1
+    //sortie: faux
+    "A" > "B"
+    //prediction: ce n'est pas vrai car selon l'ASCII "B" est superieur a "A"
+    //sortie: false
+    "B" < "C"
+    //prediction: ceci est vrai car selon ASCII "C" est superieur a "B"
+    //sortie: vrai
+    "a" > "A"
+    //prediction: car selon ASCII "a" est superieur a "A"
+    //sortie: vrai
+    "b" < "A"
+    //prediction: car selon ASCII "b" est superieur a "A"
+    //sortie: false
+    true === false
+    //prediction: on peut pas comparer la valeur et le type de ses deux nombres
+    //sortie: false
+    true != true
+    //prediction: true est true
+    //sortie: false
+
+    //exercice2
+    let val=prompt(" entrer vos deux valeur separé par une virgule")
+    bel=val.split(',')
+    console.log("la somme de ", bel[0] ,"et", bel[1], "est" , Number(bel[0]) + Number(bel[1]));
+
+    //exercice3
+    //1
+    let users=prompt("entrez une phrase qui contient le nom Nemo")
+      //2
+      console.log(users)
+      users=users.split(" ");
+   let trouver=users.indexOf("Nemo")
+      
+    //3
+     console.log("I found Nemo at:" +trouver);
+    //4
+     if(trouver==-1){
+          console.log("je nai pas trouver Nemo")
+
+     }
+     else{
+        console.log("I found Nemo at:" +trouver);
+     }
+
+     //exercice4
+     //Si le nombre donné est inférieur à 2 : retour « boom »
+    //Si le nombre donné est supérieur à 2 : la chaîne doit inclure n nombre de « o » (n étant le nombre donné)
+    //Si le nombre donné est divisible uniformément par 2, ajoutez un point d’exclamation à la fin  .
+    //Si le nombre donné est divisible uniformément par 5, renvoyez la chaîne en MAJUSCULES.
+    //Si le nombre donné est divisible uniformément par 2 et 5, retournez la chaîne en MAJUSCULES et ajoutez un point d’exclamation à la fin.
+     //1
+     let Number=prompt("entrer un numero");
+     if(Number<2){
+       let bibi="boom";
+       console.log(bibi);
+        if(Number>2){
+          for(let i=1; i <= num ; i++)
+          {Number=Number+"o";}
+        }
+       if(Number%2==0){
+        console.log("vous obtinedrez :" +bibi+"!");
+       } else if(Number%5==0){
+        console.log("le texte sera ecrit en majuscule comme suite:" +bibi.toUpperCase()); 
+      } else if((Number%2==0),(Number%5==0)){
+        console.log("afficher:" +bibi.toUpperCase()+"!")
+      }
+      else{ 
+        console.log("ce nombre nest pas divisible par 2 ni par 5" +bibi)
+      } 
+     }
+     
+     
+    //2
+    
+    
+    </script>
+    
+</body>
+</html>

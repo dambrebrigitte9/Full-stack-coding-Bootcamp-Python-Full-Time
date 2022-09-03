@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
+        //1
+        fruits.splice(0,1);
+        //2
+        fruits.sort()
+        //3
+        fruits.push("kiwi");
+        //4
+        fruits.splice(0,1);
+        //5
+        fruits.reverse();
+
+        //exercice2
+        let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+        moreFruits[1][1];
+        console.log(moreFruits[1][1]);
+    </script>
+</body>
+</html>
