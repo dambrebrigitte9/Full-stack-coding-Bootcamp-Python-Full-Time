@@ -44,6 +44,7 @@ if cing in sandwich_orders:
     print(finished_sandwiches)
 else:
     print("r")
+print("la liste finie de sandwich est :", finished_sandwiches)    
     
 
     
