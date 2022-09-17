@@ -5,9 +5,8 @@
 # values = [10, 20, 30]
 keys = ['Ten', 'Twenty', 'Thirty']
 values = [10, 20, 30]
-dictionnary={
-    'Ten':'10',
-    'Twenty':'20',
-    'Thirty':30
-}
-print(dictionnary)
+
+for i in zip(keys,values):
+    print(i)
+    
+    
