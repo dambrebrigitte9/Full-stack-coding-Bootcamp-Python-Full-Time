@@ -1,0 +1,31 @@
+.orange{
+	background-color:chocolate;
+	border: 10px solid White;
+    width:12vw;
+	height: 12vh;
+}
+
+.vif{
+	background-color:lightsalmon;
+	border: 10px solid White;
+    width:12vw;
+	height: 12vh;	
+}
+
+.noir{
+	background-color:rgb(94, 62, 30);
+	border: 10px solid White;	
+    width:12vw;
+	height: 12vh;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    border: 3px solid black;
+}
+.a{
+    display: flex;
+	width: 98vw;
+}

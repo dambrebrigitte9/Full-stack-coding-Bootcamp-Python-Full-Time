@@ -1,0 +1,26 @@
+section{
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.premier{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.deuxieme{
+    display: flex;
+	justify-content: space-around;
+	width: 700px;
+    align-items: center;
+}
+
+.jaune{
+    background-color: yellow;
+    border: 2px solid  black;
+    width: 100px;
+	height: 100px;
+}
