@@ -44,28 +44,6 @@ function infoAboutPerson(personName, personAge, personFavoriteColor){
     
     // Appelez la fonction.calculateTip()
 
-    function calculateTip(){
-      facture=Number(prompt("enter le le montant de la facture"))
-      if (facture <50){
-        console.log("le pourboire est",(facture*20)/100)
-      }else{
-        if(facture<=50 ,facture>=200){
-          console.log("le pourboire est", (facture*15)/100)
-        }else{
-          if(facture>200){
-            console.log("le pourboire est", (facture*10)/100)
-          }else{
-            console.log("erreur")
-          }
-        }
-
-      }
-
-    }
-    calculateTip()
-
-
-
 
     function calculateTip(){
       facture=Number(prompt("enter le le montant de la facture"))
@@ -126,3 +104,85 @@ function infoAboutPerson(personName, personAge, personFavoriteColor){
 // Example:
 // isDivisible(3) : Console.log all the numbers divisible by 3, and their sum
 // isDivisible(45) : Console.log all the numbers divisible by 45, and their sum
+
+function isDivisible(){
+   let somme=0
+  
+  for (var i = 0; i <= 500; i++) {
+      // console.log(i);
+      if (i%23==0){
+        console.log("tous les nombres divisibles par 23 sont",i)
+        somme= somme+i
+      }
+       
+  }
+  console.log("la somme est : ", somme)
+}
+isDivisible();
+
+
+function isDivisible(divisor){
+		console.log(" les nombres divisible par",divisor)
+		let somme= 0;
+		for (var i = 0; i <= 500; i++) {
+			if ( i%divisor == 0) {
+				console.log(i);
+				somme=somme+i
+			}
+		}
+		console.log("la somme est :",somme);
+	}
+
+	isDivisible(Number(prompt("taper un nombre : ")));
+
+
+
+
+//   Exercice 4 : Liste De Courses
+// Instructions
+// let stock = { 
+//     "banana": 6, 
+//     "apple": 0,
+//     "pear": 12,
+//     "orange": 32,
+//     "blueberry":1
+// }  
+
+// let prices = {    
+//     "banana": 4, 
+//     "apple": 2, 
+//     "pear": 1,
+//     "orange": 1.5,
+//     "blueberry":10
+// } 
+// Ajoutez les objets et à votre fichier js.stockprices
+
+// Créez un tableau appelé avec les éléments suivants : « banane », « orange » et « pomme ». Cela signifie que vous avez 1 banane, 1 orange et 1 pomme dans votre panier.shoppingList
+
+// Créez une fonction appelée qui ne prend aucun paramètre. myBill()
+
+// La fonction doit renvoyer le prix total de votre fichier . Pour ce faire, vous devez suivre ces règles:shoppingList
+// L’article doit être en stock. (Astuce : vérifier if .. in)
+// Si l’article est en stock, découvrez le prix de l’objet.prices
+
+// Appelez la fonction.myBill()
+
+// Bonus: Si l’article est en stock, diminuez le stock de l’article de 1
+
+let stock = { 
+  "banana": 6, 
+  "apple": 0,
+  "pear": 12,
+  "orange": 32,
+  "blueberry":1
+}  
+
+let prices = {    
+  "banana": 4, 
+  "apple": 2, 
+  "pear": 1,
+  "orange": 1.5,
+  "blueberry":10
+} 
+
+
