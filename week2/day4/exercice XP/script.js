@@ -175,7 +175,7 @@ let stock = {
   "pear": 12,
   "orange": 32,
   "blueberry":1
-}  
+} 
 
 let prices = {    
   "banana": 4, 
@@ -185,4 +185,109 @@ let prices = {
   "blueberry":10
 } 
 
+let shoppingList=[
+  "banana",
+  "orange",
+  "apple" 
+]
 
+function myBill(){
+  let somme=0
+  for (i of shoppingList){
+    if (stock[i]>0){
+      somme=somme+prices[i]
+      stock[i] -= 1
+    }
+    else{
+      console.log("rupture:",i)
+    }
+  }
+  console.log("la somme est de ",somme)
+
+
+}
+
+myBill()
+
+
+// Exercice 5 : Qu’y A-T-Il Dans Mon Portefeuille ?
+// Instructions
+// Remarque: Lisez l’illustration (point 4), tout en lisant les instructions
+
+// Créez une fonction nommée qui reçoit deux arguments :changeEnough(itemPrice, amountOfChange)
+// le prix d’un article
+// et un tableau représentant la quantité de monnaie dans votre poche.
+
+// Dans la fonction, déterminez si vous pouvez ou non vous permettre l’article.
+// Si la somme de la modification est supérieure ou égale au prix de l’article (c’est-à-dire que cela signifie que vous pouvez vous permettre l’article), la fonction doit retourner true
+// Si la somme de la modification est inférieure au prix de l’article (c’est-à-dire que cela signifie que vous ne pouvez pas vous permettre l’article), la fonction doit retourner false
+
+// Le changement sera toujours représenté dans l’ordre suivant: quarts, sous, nickels, centimes.
+// A quarters is 0.25
+// A dimes is 0.10
+// A nickel is 0.05
+// A penny is 0.01
+
+
+// 4. Pour illustrer :
+
+// Après avoir créé la fonction, appelez-la comme suit :
+
+// changeEnough(4.25, [25, 20, 5, 0])
+// La valeur représente le prix de l’article4.25
+// Le tableau représente 25 quarts, 20 sous, 5 nickels et 0 centime.[25, 20, 5, 0]
+// La fonction devrait revenir, car avoir 25 trimestres, 20 sous, 5 nickels et 0 centime vous donne ce qui est supérieur à 4,25 (le montant total dû)true6.25 + 2 + .25 + 0 = 8.50
+
+
+// Exemples
+
+// changeEnough(14.11, [2,100,0,0]) => returns false
+// changeEnough(0.75, [0,0,20,5]) => returns true
+
+
+function changeEnough(itemPrice, amountOfChange){
+  for (u in amountOfChange){
+    if (amountOfChange[u] >=4.25){
+      return true
+    }
+    else{
+      return false
+    }
+  }
+}
+
+changeEnough(4.25, [25, 20, 5, 0])
+
+
+
+// Exercice 6 : Frais De Vacances
+// Instructions
+// Créons des fonctions qui calculent les coûts de vos vacances:
+
+// Définissez une fonction appelée . hotelCost()
+// Il doit demander à l’utilisateur le nombre de nuits qu’il souhaite séjourner à l’hôtel.
+// Si l’utilisateur ne répond pas ou si la réponse n’est pas un numéro, demandez à nouveau.
+// L’hôtel coûte 140 $ par nuit. La fonction devrait le prix total de l’hôtel. return
+
+// Définissez une fonction appelée .planeRideCost()
+// Il devrait demander à l’utilisateur sa destination.
+// Si l’utilisateur ne répond pas ou si la réponse n’est pas une chaîne, demandez à nouveau.
+// La fonction devrait avoir un prix différent en fonction de l’emplacement.return
+// « Londres »: 183$
+// « Paris » : 220$
+// Toutes les autres destinations : 300$
+
+// Définissez une fonction appelée .rentalCarCost()
+// Il devrait demander à l’utilisateur le nombre de jours qu’il souhaite louer la voiture.
+// Si l’utilisateur ne répond pas ou si la réponse n’est pas un numéro, demandez à nouveau.
+// Calculez le coût de location de la voiture. La voiture coûte 40 $ tous les jours.
+// Si l’utilisateur loue une voiture pour plus de 10 jours, il bénéficie d’une réduction de 5%.
+// La fonction devrait le prix total de la location de voiture. return
+
+// Définissez une fonction appelée qui renvoie le coût total des vacances de l’utilisateur en appelant les 3 fonctions que vous avez créées ci-dessus.
+// Exemple : Le coût de la voiture : $x, le coût de l’hôtel : $y, le coût des billets d’avion : $z.
+// Astuce : Il faut appeler les fonctions , et à l’intérieur de la fonction .totalVacationCost()hotelCost()planeRideCost()rentalCarCost()totalVacationCost()
+
+// Appeler la fonction totalVacationCost()
+
+// Bonus: Au lieu d’utiliser une à l’intérieur des 3 premières fonctions, utilisez uniquement une invite à l’intérieur de la fonction. Vous devez modifier les 3 premières fonctions en conséquence.prompttotalVacationCost()
