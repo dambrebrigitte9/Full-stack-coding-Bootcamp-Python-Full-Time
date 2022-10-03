@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Exercice 2 : Utilisateurs Et Style
+Instructions
+<div>Users:</div>
+<ul>
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+
+
+Ajoutez le code ci-dessus à votre fichier HTML
+
+Ajoutez une couleur de fond « bleu clair » et un peu de rembourrage au fichier .<div>
+
+N’affichez pas le nœud de texte " John ».<li>
+
+Ajoutez une bordure à celui qui contient le nœud de texte « Pete ».<li>
+
+Modifiez la taille de police de tout le corps.
+
+Bonus: Si la couleur de fond du est « bleu clair », alertez « Bonjour x et y » (x et y sont les utilisateurs dans le div).div -->
+
+<div>Users:</div>
+<ul>
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+
+
+<script>
+    let aa=document.getElementsByTagName('div')[0].style.background="blue"
+    document.getElementsByTagName('ul')[0].textContent
+    document.getElementsByTagName('li')[1].style.border='1px solid green'
+    body = document.getElementsByTagName("body");
+	body[0].setAttribute("style","font-size: 150%;");
+     
+</script>
+
+    
+</body>
+</html>

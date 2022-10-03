@@ -1,0 +1,63 @@
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Exercice 1 : Utilisateurs
+Instructions
+<div id="container">Users:</div>
+<ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+<ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+</ul>
+
+
+Ajoutez le code ci-dessus à votre fichier HTML
+
+Utilisation de Javascript :
+Récupérez le et consolez.log-lediv
+Remplacez le nom « Pete » par « Richard ».
+Remplacez chaque prénom par votre nom.<ul>'s
+Supprimez le qui contient le nœud de texte « Sarah ».<li>
+
+Bonus - Utilisation de Javascript :
+Ajoutez une classe appelée aux deux fichiers .student_list<ul>'s
+Ajoutez les classes et au premier .universityattendance<ul> -->
+
+    <div id="container">Users:</div>
+    <ul class="list">
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+    <ul class="list">
+        <li>David</li>
+        <li>Sarah</li>
+        <li>Dan</li>
+    </ul>
+
+    <script>
+        let bibi=document.getElementById("container").innerHTML;
+        console.log(bibi)
+        document.getElementsByTagName('li')[1].textContent = "Richard";
+        document.querySelectorAll("li");
+        document.getElementsByTagName('li')[0].textContent = "BRIGITTE";
+        document.getElementsByTagName('li')[2].textContent = "BRIGITTE";
+        let h=document.getElementsByTagName('li')[3];
+        h.remove()
+        document.getElementsByTagName("ul")[1]
+       
+        
+    </script>
+    
+</body>
+</html>

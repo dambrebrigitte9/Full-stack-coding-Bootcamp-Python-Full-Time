@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Exercice 3 : Changer La Barre De Navigation
+Instructions
+<div id="navBar">
+    <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Friends</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">My Pics</a></li>
+    </ul>
+</div>
+
+
+Ajoutez le code ci-dessus à votre fichier HTML
+
+Dans le , modifiez la valeur de l’attribut id de navBar à socialNetworkNavigation, à l’aide de la méthode.<div>setAttribute
+
+Nous allons ajouter un nouveau au fichier .<li><ul>
+Tout d’abord, créez une nouvelle balise (utilisez la méthode).<li>createElement
+Créez un nouveau nœud de texte avec « Déconnexion » comme texte spécifié.
+Ajoutez le nœud de texte au nœud de liste nouvellement créé ().<li>
+Enfin, ajoutez ce nœud de liste mis à jour à la liste non ordonnée (), à l’aide de la méthode.<ul>appendChild
+
+Bonus
+Utilisez les propriétés et les propriétés pour récupérer les premier et dernier éléments de leur élément parent (). Affichez le texte de chaque lien. (Astuce : utilisez la propriété).firstElementChildlastElementChild<li><ul>textContent -->
+
+
+    <div id="navBar">
+        <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Friends</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">My Pics</a></li>
+        </ul>
+    </div>
+    
+    
+
+    <script>
+     //1_2
+    let ody = document.getElementsByTagName("div");
+	ody[0].setAttribute("id","socialNetworkNavigation");
+    console.log(ody[0])
+    //3
+    let ul = document.getElementsByTagName("ul");
+	let bibi = document.createElement("li");
+	let texte = document.createTextNode("Déconnexion");
+	bibi.appendChild(texte);
+	ul[0].appendChild(bibi);
+    //4
+    console.log(ul[0].firstElementChild.textContent)
+	console.log(ul[0].lastElementChild.textContent)
+    </script>
+
+</body>
+</html>
