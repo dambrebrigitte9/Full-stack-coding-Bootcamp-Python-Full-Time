@@ -12,8 +12,8 @@
 --      CONNECTION LIMIT = -1
 --      IS_TEMPLATE = False;
  
-    SELECT * FROM etudiant   ORDER BY etudiant_id ASC
-   SELECT * FROM etudiant
+  SELECT * FROM etudiant   ORDER BY etudiant_id ASC
+  SELECT * FROM etudiant
  UPDATE etudiant
  SET birth_date='02/11/1998'
  WHERE etudiant_id=1 AND etudiant_id=3

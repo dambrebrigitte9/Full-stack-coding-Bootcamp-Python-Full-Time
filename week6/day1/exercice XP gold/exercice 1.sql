@@ -12,6 +12,18 @@
 --     CONNECTION LIMIT = -1
 --     IS_TEMPLATE = False;
 
+-- Exercice 1 : Bootcamp
+-- Instructions
+-- Poursuite de l’exercice XP
+
+-- Choisir
+-- Pour les questions suivantes, vous devez récupérer les first_names, les last_names et les birth_dates des étudiants.
+
+-- Allez chercher les quatre premiers élèves. Vous devez classer les quatre étudiants par ordre alphabétique par last_name.
+-- Récupérez les détails du plus jeune élève.
+-- Aller chercher trois étudiants en sautant les deux premiers étudiants.
+
+
 
 SELECT first_name,last_name,birth_date FROM etudiant
 SELECT first_name,last_name,birth_date FROM etudiant LIMIT 4
