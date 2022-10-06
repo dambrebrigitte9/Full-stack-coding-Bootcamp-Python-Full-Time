@@ -22,3 +22,33 @@
 -- Ajoutez 2 critiques de films. Assurez-vous de les lier à des objets valides dans les autres tables.
 
 -- Supprimer un film qui a une critique du tableau new_film, qu’advient-il du tableau customer_review ?
+
+SELECT * FROM public.language
+select title,description,language.name from film INNER JOIN language ON film.film_id =language.language_id
+
+CREATE TABLE new_film(
+     new_film_id SERIAL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL
+    
+)
+
+INSERT INTO new_film(name)
+VALUES
+('Attaque de titant'),
+('trois femme un village'),
+('le griot du village'),
+('Terresa');
+
+CREATE TABLE customer_review(
+    review_id SERIAL PRIMARY KEY,
+    film_id INTEGER NOT NULL,
+	language_id INTEGER NOT NULL,
+	title VARCHAR(50) NOT NULL,
+    score DECIMAL NOT NULL,
+	review_text TEXT NOT NULL,
+	last_update DECIMAL NOT NULL,
+	FOREIGN KEY (film_id) REFERENCES new_film(new_film_id) ON DELETE CASCADE
+);      -- formule de usage de FOREIGN : FOREIGN KEY(parent_id) REFERENCES parent_table(parent_id) ON DELETE CASCADE
+
+insert into customer_review(film_id, language_id, titre, note, review_text, last_update) VALUES(1, 1, 'film pas bon', 2, 'texte de revue', '23-08-2022'), (1, 1, 'film pas bon', 2, 'texte de revue', '23-08-2022'),(1, 1, 'film pas bon', 2, 'texte de revue', '23-08-2022'),(1, 1, 'film pas bon', 2, 'texte de revue', '23-08-2022')
+delete from new_film where name='le griot du village'
