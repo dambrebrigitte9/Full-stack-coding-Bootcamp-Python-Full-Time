@@ -55,19 +55,29 @@
         </tr>
       </table>
       <script>
-        let table = document.body.firstElementChild;
-        // your code
+        
+         //your code
 
-        let table = document.body.firstElementChild;
-        let td = document.getElementsByTagName("td");
-        nbr1 = 0;
-        nbr2 = 0;
-        for(let i=0; i < td.length ; i += 6) {
-   		td[i].setAttribute("style","background-color : red");
-    }
-	    for(let i=4; i < td.length ; i += 4) {
-   		td[i].setAttribute("style","background-color : red");
-    }
+        let table = document.getElementsByTagName('td')
+        console.log(table)
+        let choisir;
+		    let i=1;
+		    for (let element of table) {
+			    if(element.innerHTML==i+":"+i){
+				    choisir=element;
+				    choisir.style.color="red";
+				    i=i+1;
+			    }
+          else{
+            console.log("ee")
+          }
+        }
+        
+
+
+
+        
+        
       </script>
     
     

@@ -20,3 +20,4 @@
 -- Le 4ème film : Son ami Matthew Mahan a également regardé ce film. Il avait le mot « bateau » dans le titre ou la description, et il semblait que c’était un DVD très coûteux à remplacer.
 UPDATE language set name ='espagnol' where language_id = 2;
 UPDATE language set name ='chinois' where language_id = 3
+

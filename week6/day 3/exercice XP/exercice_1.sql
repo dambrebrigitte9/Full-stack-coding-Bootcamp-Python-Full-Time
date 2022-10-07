@@ -47,7 +47,7 @@ CREATE TABLE customer_review(
     score DECIMAL NOT NULL,
 	review_text TEXT NOT NULL,
 	last_update DECIMAL NOT NULL,
-	FOREIGN KEY (film_id) REFERENCES new_film(new_film_id) ON DELETE CASCADE
+	FOREIGN KEY (review_id) REFERENCES new_film(new_film_id) ON DELETE CASCADE
 );      -- formule de usage de FOREIGN : FOREIGN KEY(parent_id) REFERENCES parent_table(parent_id) ON DELETE CASCADE
 
 insert into customer_review(film_id, language_id, titre, note, review_text, last_update) VALUES(1, 1, 'film pas bon', 2, 'texte de revue', '23-08-2022'), (1, 1, 'film pas bon', 2, 'texte de revue', '23-08-2022'),(1, 1, 'film pas bon', 2, 'texte de revue', '23-08-2022'),(1, 1, 'film pas bon', 2, 'texte de revue', '23-08-2022')
