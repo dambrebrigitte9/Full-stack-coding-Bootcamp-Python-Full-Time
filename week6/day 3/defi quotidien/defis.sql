@@ -96,7 +96,7 @@ ON client.client_id =profil_Client.profil_Client_id where profil_client.isLogged
 
 --partie 2
 CREATE TABLE books(
-     books_id SERIAL PRIMARY KEY,
+    books_id SERIAL PRIMARY KEY,
     title  VARCHAR(50) NOT NULL,
 	author VARCHAR(50) NOT NULL
 	
@@ -111,7 +111,39 @@ VALUES('Alice au pays des merveilles', 'Lewis Carroll'),
 
 CREATE TABLE Student(
      Student_id SERIAL PRIMARY KEY,
-     name  VARCHAR(50) NOT NULL,
-	 UNIQUE  age DECIMAL NOT NULL,
-	CONSTRAINT age_contrainte age>=15  
+     name  VARCHAR(50) NOT NULL UNIQUE,
+	   age DECIMAL NOT NULL CONSTRAINT age_contrainte CHECK(age<=15) 
  );
+
+ INSERT INTO Student(name,age)
+ VALUES('Jean', '12 '),
+ 		('Lera', '11'),
+ 		('Patrick', '10' ),
+		('Bob', '14');
+
+
+CREATE TABLE library(
+    Student_id SERIAL,
+    books_id INTEGER NOT NULL,
+    borrowed_date date NOT NULL,
+    PRIMARY KEY (books_id),
+    FOREIGN KEY (Student_id) REFERENCES Student(Student_id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (books_id) REFERENCES books(books_id) ON DELETE CASCADE ON UPDATE CASCADE
+ );
+
+
+INSERT into library (Student_id,books_id, borrowed_date ) VALUES 
+((SELECT Student_id FROM Student where name = 'John'),
+ (SELECT books_id FROM books WHERE title='Alice au pays des merveilles'),'15/02/2022'),
+ 
+ ((SELECT Student_id FROM Student WHERE name = 'Bob'),
+ (SELECT books_id FROM books WHERE title=' Pour tuer un oiseau moqueur '),'03/03/2021'),
+ 
+ ((SELECT Student_id FROM Student WHERE name = 'Lera'),
+ (SELECT books_id FROM books WHERE title='Alice au pays des merveilles'),'23/05/2021'),
+ 
+ ((SELECT Student_id FROM Student WHERE name = 'Bob'),
+ (SELECT books_id FROM books WHERE title='Harry Potter'),'12/08/2021');
+ 
+
+ SELECT * FROM library;
