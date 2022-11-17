@@ -69,19 +69,19 @@
 SELECT COUNT(*) 
     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id IS NULL )
 
-    --la sortie sera
+    --la sortie sera   "0"
 
 SELECT COUNT(*) 
     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id = 5 )
 
-    --la sortie sera
+    --la sortie sera  "2"
 
 SELECT COUNT(*) 
     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab )
 
-        --le resultat sera 
+        --le resultat sera  "0"
 
 SELECT COUNT(*) 
     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id IS NOT NULL )
 
-        --le resultat sera 
+        --le resultat sera   "2"
