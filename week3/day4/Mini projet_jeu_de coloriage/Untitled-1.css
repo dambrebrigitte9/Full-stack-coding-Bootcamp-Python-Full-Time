@@ -1,0 +1,119 @@
+.maitre{
+    height: 700px;
+    width: 150px;
+    background: bisque;
+    border: 3px solid black;
+}
+button{
+
+    justify-content: center;
+    text-align: center;
+    height: 45px;
+    width: 120px;
+    border-radius: 10px;
+    margin-top: 20px;
+   margin-left: 10px;
+}
+.a{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: brown;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+
+}
+.rouge{
+    display: inline-block;
+}
+.b{
+    background: blueviolet;
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.c{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: rgb(165, 123, 123);
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.d{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: rgb(42, 165, 118);
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.e{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: rgb(165, 42, 142);
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.f{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: rgb(165, 42, 71);
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.g{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: rgb(133, 66, 66);
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.h{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: rgb(74, 67, 67);
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.i{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: rgb(42, 165, 71);
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.j{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: rgb(42, 165, 165);
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.o{
+    width:35px;
+    height: 70px;
+    border: 1px solid black;
+    background: white;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 15px;
+}
