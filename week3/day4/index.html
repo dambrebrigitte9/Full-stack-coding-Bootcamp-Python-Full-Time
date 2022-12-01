@@ -1,0 +1,90 @@
+<!-- Instructions
+Liste des choses à faire
+
+
+
+Recréez la liste des tâches ci-dessus :
+
+Créez un fichier HTML, CSS et JS.
+
+Dans le fichier HTML
+créer un formulaire avec une entrée et un bouton « Soumettre ».type="text"
+Ajouter une div vide sous le formulaire
+<div class="listTasks"></div>
+
+Dans le fichier js, vous devez ajouter les fonctionnalités suivantes :
+Créer un tableau vide :const tasks = [];
+
+Créez une fonction appelée. Dès que l’utilisateur clique sur le bouton :addTask()
+vérifier que l’entrée n’est pas vide,
+puis ajoutez-le au tableau (c’est-à-dire ajoutez le texte de la tâche)
+puis ajoutez-le au DOM, sous la forme (dans le) .<div class="listTasks"></div>
+Chaque nouvelle tâche ajoutée devrait avoir (en commençant de gauche à droite - consultez l’image en haut de la page)
+un bouton « X ». Utilisez la police géniale pour le bouton « X ».
+une entrée. L’étiquette de l’entrée est la tâche ajoutée par l’utilisateur.type="checkbox"
+
+BONUS I (non obligatoire) :
+Remplacez la variable par un tableau d’objets de tâche.tasks
+Chaque nouvelle tâche ajoutée au tableau doit avoir les propriétés :task_id,text etdone (un booléen -par défaut).false
+Chaque nouvel objet de tâche doit avoir un task_id, à partir de 0, et un attributdata-task-id, dont la valeur est identique à celle del’task_id. Consultez les attributs data-*ici.
+Créez une fonction nommée qui, dès que l’utilisateur clique sur l’entrée « case à cocher », la propriétédonedoit passer de l’objet et du noir au rouge barré dans le DOM.doneTask()falsetrue
+
+BONUS II (non obligatoire) :
+Créez une fonction nommée qui, dès que l’utilisateur clique sur le bouton « X », supprime cette tâche spécifique du tableau.deleteTask()listTasks -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(218, 69, 99);
+        }
+        .milieu{
+            text-align: center;
+        }
+        fieldset{
+            height: 75px;
+            width: 250px;
+        }
+        input[type=submit]{
+            background: darkolivegreen;
+        }
+        input[type=text]{
+            height: 20px;
+            width: 165px;
+
+        }
+       
+
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1 class="milieu">TO-DO LIST</h1>
+        <form action="">
+            <fieldset>
+            <label for=""> Entrer du text:</label>
+            
+            <input type="text" name="" id="">
+            <br>
+            <br>
+            
+            <input type="submit" value="Soumettre" name="add" id="add">
+            </fieldset>
+        </form>
+        <div class="listTaks">
+
+        </div>
+
+    </header>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
