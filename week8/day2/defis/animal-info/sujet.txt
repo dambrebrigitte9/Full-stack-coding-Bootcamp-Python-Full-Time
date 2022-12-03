@@ -1,0 +1,93 @@
+Exercice 1 : Animaux
+Instructions
+Nous allons créer une application Web simple basée sur Django pour gérer les informations sur différents animaux.
+
+Créez un nouveau répertoire pour votre projet avec un nouvel environnement virtuel. Appelez le répertoireanimal-info.
+Activez votre nouvel environnement virtuel, puis installez Django.
+Créez un nouveau projet à l’aide de Django appeléanimals, puis créez une nouvelle application à l’intérieur appeléeinfo.
+Utilisez le fichier json proposé à la fin de cette page. Le fichier possède les dictionnaires suivants :
+Animal, avec propriétés:
+id
+pattes – un nombre entier, le nombre de pattes que l’animal a
+poids – le poids moyen d’un animal adulte de ce type
+hauteur – la taille moyenne d’un animal adulte de ce type
+vitesse – la vitesse maximale à laquelle cet animal peut se déplacer
+Famille – Le groupe familial auquel cet animal appartient. (Doit référencer le dictionnaire familial par id - voir ci-dessous).
+Famille, représentant un groupe d’animaux ou une « famille », avec des propriétés :
+id
+nom
+
+Ajoutez quelques familles au fichier json. Familles recommandées :
+mammifère
+reptile
+insecte
+arachnide
+amphibien
+etc.
+
+Ajoutez quelques animaux à votre fichier json.
+
+Créez 2 vues, correspondant aux URL suivantes :
+/family/X, où X est l’ID (clé primaire) de la famille donnée. Devrait montrer une liste de tous les animaux de cette famille.
+/animal/X, où X est l’ID (clé primaire) de l’animal donné. Devrait montrer toutes les informations sur l’animal donné.
+
+Créer deux modèles rendus par les deux vues ci-dessus
+
+
+Fichier JSON
+
+{
+    "animals": [
+        {
+            "id" :1,
+            "name": "Dog",
+            "legs": 4,
+            "weight": 5.67,
+            "height":4.2,
+            "speed": 34,
+            "family": 2
+        },
+        {
+            "id": 2,
+            "name": "Domestic Cat",
+            "legs": 2,
+            "weight": 5.67,
+            "height":4.2,
+            "speed": 34,
+            "family": 1
+        },
+        {
+            "id": 3,
+            "name": "Panther",
+            "legs": 2,
+            "weight": 5.67,
+            "height":4.2,
+            "speed": 34,
+            "family": 1 
+        }
+    ],
+    "families": [
+        {
+            "id": 1,
+            "name": "Felidae"
+        },
+        {
+            "id": 2,
+            "name": "Caninae"
+        }
+    ]
+}
+
+
+Soumettez Vos Exercices :
+N’oubliez pas de pousser jusqu’àGithub
+
+Soumettez vos exercices à DI Learning
+
+Plus D’infos
+Durée (environ)
+1 heure
+
+
+Une dernière chose: Bonne chance!
+
