@@ -1,0 +1,42 @@
+Instructions
+Nous allons créer une liste de choses à faire.
+
+Créez et activez un virtualenv, créez un nouveau projet django.
+
+Créez une application appelée todo.
+
+Créez un modèle de catégorie avec les champs :
+nom
+image (pour l’instant un champ URL - il peut aussi s’agir d’une icône)
+
+Créer un modèle de Todo avec les champs :
+titre
+Détails
+has_been_done : défini par défaut sur False
+date_creation (lorsque l’utilisateur a créé la tâche)
+date_completion (lorsque l’utilisateur a terminé la tâche)
+deadline_date (lorsque l’utilisateur doit terminer la tâche)
+catégorie : relation un-à-plusieurs avec le modèle de catégorie (ForeignKey)
+
+
+Remarque : Une Todo peut avoir une catégorie et une catégorie peut être partagée entre plusieurs Todos.
+Exemple de catégorie : travail, maison, shopping, études, social
+
+
+
+Ajouter des catégories à partir de la page Admin ou du Django Shell
+
+Créer des vues
+Todo View : Un formulaire où l’utilisateur peut ajouter une nouvelle tâche.
+display_todos : où toutes les todos sont affichées. Pour chaque todo, vous devez afficher :
+le titre, les détails,
+le date_creation, le deadline_date,
+la catégorie du todo,
+un bouton « TERMINÉ » (voir Exercice XP Gold)
+
+
+Astuce : lors de la création du formulaire 'Ajouter des tâches', vérifiez comment ajouter un champ de choix pour choisir entre les catégories
+Regardez ici pour le champ de choix Regardez ici pour le champ
+à choix multiples
+
+Créez des itinéraires et des modèles en fonction des vues.

@@ -13,7 +13,7 @@ class categorie(models.Model):
 class todo(models.Model):
     titre= models.CharField(max_length=30)
     detail= models.CharField(max_length=30)
-    has_been_done =models.CharField(default=False)
+    has_been_done =models.BooleanField(default=False)
     date_creation = models.DateField(auto_now_add=True)
     date_completion = models.DateField(auto_now_add=True)
     deadline_date  = models.DateField(auto_now_add=True)
