@@ -1,0 +1,30 @@
+Instructions
+Vous allez travailler sur le défi quotidien de Week8Day2.
+
+
+
+Voici les instructions :
+
+Créez un site Web 411 (114 en Israël) qui vous permet de rechercher des numéros de téléphone de personnes par leur numéro ou leur nom de personnes.
+
+La base de données doit avoir une table Person avec les attributs suivants :
+
+id (Integer, Primary Key)
+name (String)
+email (String, unique)
+phone number (PhoneNumberField)
+address (String)
+
+
+Le numéro de téléphone doit être représenté à l’aide d’un PhoneNumberField fourni par le package django-phonenumber-field.
+
+
+
+Voici ce que vous devez ajouter :
+
+Créez une nouvelle vue :
+
+Créez une vue qui affiche un formulaire pour envoyer un numéro de téléphone ou un nom.
+Astuce : Pour le formulaire, utilisez le PhoneNumberField qui vous a été fourni par le package django : django-phonenumber-field.
+
+Une fois que l’utilisateur a entré sa recherche, redirigez-le vers les vues (c’est-à-dire les vues créées dans le défi quotidien de Week8Day2)/persons/phonenumber/persons/name
