@@ -6,6 +6,8 @@ class gifs(models.Model):
     url=models.URLField(max_length=40, default="admin@default.com")
     uploader_name =models.CharField(max_length=30)
     created_at = models.DateField(auto_now_add=True)
+    jaime= models.IntegerField(max_length=30, default=4)
+
 
     
     
@@ -18,4 +20,5 @@ class catégorie(models.Model):
 
     def __str__(self):
         return self.nom
+
 

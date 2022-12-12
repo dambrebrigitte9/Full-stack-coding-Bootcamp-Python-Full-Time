@@ -1,0 +1,64 @@
+Exercice 1 : Projet Giphy
+Nous allons créer un petit site Web gif.
+
+ASSUREZ-VOUS DE LIRE TOUTES LES INSTRUCTIONS AVANT DE COMMENCER LE PROJET
+
+
+
+Instructions
+Partie I - Modèles
+Créez et activez un virtualenv, créez un nouveau projet django.
+
+Créez une nouvelle application appelée gifs.
+
+Créez un modèle Gif avec les champs suivants :
+titre (CharField)
+url (URLField)
+uploader_name (CharField)
+created_at (DatetimeField, doit être renseigné lors de sa création).
+
+Créez un modèle de catégorie avec les champs suivants :
+nom (CharField)
+gifs - (champ plusieurs-à-plusieurs avec le modèle GIF). Un Gif peut avoir de nombreuses catégories différentes, et une catégorie peut être partagée entre de nombreux gifs
+
+Remplissez les catégories : ajoutez environ 10 catégories à votre base de données à l’aide du shell django ou de l’admin. Vous pouvez trouver quelques idées de catégories gif sur le site giphy - catégories
+
+
+Partie II - Formulaires Et Vues
+Créez un fichier forms.py et ajoutez deux nouveaux formulaires :
+GifForm avec les champs
+uploader_name
+titre
+url : Vous pouvez utiliser l’url des gifs à partir du site web de giphy. Cliquez sur le gif que vous voulez, et copiez le lien gif.
+catégories : rechercher ModelMultipleChoiceField
+
+CategoryForm avec les champs
+nom
+
+Créez des vues :
+Vue de la page d’accueil: cette vue affichera tous les gifs de la base de données. Affichez chaque gif dans une balise.
+Ajoutez une barre de navigation, avec des liens qui redirigent l’utilisateur vers la vue Ajouter un nouveau GIF et vers la vue Ajouter une nouvelle catégorie.img
+
+Ajouter une nouvelle vue GIF : cette vue utilisera le GifForm créé ci-dessus, pour ajouter un nouveau gif à la base de données.
+
+Ajouter une nouvelle vue Catégorie : cette vue utilisera le CategoryForm créé ci-dessus, pour ajouter une nouvelle catégorie à la base de données.
+
+Vue de catégorie : cette vue accepte un identifiant de catégorie comme paramètre et affiche tous les gifs avec cette catégorie (c’est-à-dire par exemple tous les gifs « heureux »).
+
+Vue Catégories : cette vue affichera toutes les catégories existantes de la base de données. Chaque catégorie a un lien redirigeant l’utilisateur vers la vue Catégorie.
+
+Vue Gif : cette vue accepte un identifiant gif et affiche les détails de ce gif spécifique sur la page. Affichez chaque gif dans une balise.img
+
+Create routes and templates in accordance to the views.
+
+
+Part III - Tips
+READ THE DOCS - you will not be able to guess/remember everything, keep the docs handy and get used to searching through them for answers.
+
+Working on the GifForm and the Add new GIF view concurrently will allow you to see your progress.
+
+Consultez l’héritage des modèles pour désencombrer votre code HTML et arrêter le code répétitif.
+
+Utilisez Bootstrap pour styliser rapidement et (relativement) facilement vos pages.
+
+Vous pensez à une fonctionnalité intéressante? Essayez de le mettre en œuvre!
