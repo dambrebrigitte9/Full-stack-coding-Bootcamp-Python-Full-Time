@@ -18,7 +18,7 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #  path('', include('gifs.urls')),
+    path('', include('gifs.urls')),
 
 
 ]
